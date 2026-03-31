@@ -1,4 +1,14 @@
-/* Primary Colors: Beige, Black, Orange */
+/* Importing a clean, modern font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --beige: #F5F5DC;
+    --deep-orange: #E67E22;
+    --sunset-orange: #FF8C00;
+    --soft-orange: #FFD580;
+    --black: #1A1A1A;
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
 
 * {
     margin: 0;
@@ -7,136 +17,182 @@
 }
 
 body {
-    background-color: beige;
-    font-family: Arial, sans-serif;
+    background-color: var(--beige);
+    color: var(--black);
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
 }
 
-/* Header styling */
-header {
-    background-color: black;
-    color: orange;
-    padding: 30px 20px;
-    text-align: center;
+/* --- Typography --- */
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    color: var(--black);
+    margin-bottom: 1rem;
 }
 
-header h1 {
-    color: orange;
-    font-size: 32px;
-    margin-bottom: 10px;
+/* --- Navigation --- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    background: white; /* Clean break from beige */
+    box-shadow: var(--shadow);
 }
 
-header p {
-    color: beige;
-    font-size: 18px;
+.logo h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
 }
 
-/* Headings styling */
-h1, h2, h3, h4, h5, h6 {
-    color: black;
-    margin-top: 20px;
-    margin-bottom: 10px;
+.logo span {
+    color: var(--deep-orange);
 }
 
-h2 {
-    color: black;
-    border-bottom: 3px solid orange;
-    padding-bottom: 10px;
+nav ul {
+    display: flex;
+    list-style: none;
 }
 
-/* Section styling */
-section {
-    padding: 20px;
-    margin: 20px 0;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-left: 4px solid orange;
-}
-
-/* Links styling */
-a {
-    color: orange;
+nav ul li a {
     text-decoration: none;
-    transition: 0.3s;
+    color: var(--black);
+    font-weight: 600;
+    margin: 0 15px;
+    transition: color 0.3s;
 }
 
-a:hover {
-    color: #ff9500;
-    text-decoration: underline;
+nav ul li a:hover {
+    color: var(--deep-orange);
 }
 
-/* Buttons styling */
-button {
-    background-color: orange;
-    color: black;
+.auth-buttons button {
+    padding: 8px 20px;
+    border-radius: 25px;
+    border: 2px solid var(--deep-orange);
+    background: transparent;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.auth-buttons button:last-child {
+    background: var(--deep-orange);
+    color: white;
+    margin-left: 10px;
+}
+
+/* --- Hero Section --- */
+.hero {
+    padding: 80px 5%;
+    text-align: center;
+    background: linear-gradient(135deg, #FFF3E0 0%, #FFE0B2 100%);
+    border-bottom-left-radius: 50% 20px;
+    border-bottom-right-radius: 50% 20px;
+}
+
+.hero h2 {
+    font-size: 2.8rem;
+}
+
+.search-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-container input {
+    padding: 15px 25px;
+    width: 40%;
     border: none;
-    padding: 12px 24px;
-    border-radius: 5px;
+    border-radius: 30px 0 0 30px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.search-container button {
+    padding: 15px 30px;
+    background: var(--black);
+    color: white;
+    border: none;
+    border-radius: 0 30px 30px 0;
     cursor: pointer;
     font-weight: bold;
-    font-size: 16px;
-    transition: 0.3s;
 }
 
-button:hover {
-    background-color: #ff9500;
-    transform: scale(1.05);
-}
-
-button:active {
-    transform: scale(0.98);
-}
-
-/* Text styling */
-p, li {
-    color: black;
-    font-size: 16px;
-}
-
-/* Form styling */
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    border: 2px solid orange;
-    border-radius: 4px;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-}
-
-input:focus, textarea:focus {
-    outline: none;
-    border-color: #ff9500;
-    box-shadow: 0 0 5px orange;
-}
-
-label {
-    color: black;
-    font-weight: bold;
-    display: block;
-    margin-top: 10px;
-}
-
-/* List styling */
-ul {
-    margin-left: 20px;
-}
-
-li {
-    margin: 8px 0;
-}
-
-/* Footer styling */
-footer {
-    background-color: black;
-    color: orange;
+/* --- Features & Grids --- */
+.features, .categories {
+    padding: 60px 5%;
     text-align: center;
-    padding: 20px;
-    margin-top: 30px;
-    border-top: 3px solid orange;
 }
 
-footer p {
-    color: beige;
-    margin: 0;
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
 }
-    
+
+article {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    border-bottom: 5px solid var(--sunset-orange);
+    box-shadow: var(--shadow);
+}
+
+/* --- Categories --- */
+.Category-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.category-item {
+    background: var(--soft-orange);
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.category-item:hover {
+    transform: translateY(-5px);
+    background: var(--sunset-orange);
+    color: white;
+}
+
+/* --- Call to Action --- */
+.cta-section {
+    background: var(--deep-orange);
+    color: white;
+    padding: 80px 5%;
+    text-align: center;
+    margin: 40px 5%;
+    border-radius: 30px;
+}
+
+.cta-section h2, .cta-section p {
+    color: white;
+}
+
+.cta-section button {
+    padding: 15px 40px;
+    margin: 10px;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    background: var(--black);
+    color: white;
+}
+
+/* --- Footer --- */
+footer {
+    padding: 40px 5%;
+    text-align: center;
+    background: #EFEBE9;
+}
