@@ -1,0 +1,127 @@
+
+:root{
+    --bg: #f5e6d8; /* beige */
+    --text: #0b0b0b; /* black */
+    --muted: #444;
+    --accent: orangered; /* orange-red */
+    --card-bg: #ffffff;
+    --card-border: rgba(0,0,0,0.08);
+}
+
+*{box-sizing: border-box}
+
+body{
+    margin:0;
+    font-family: 'Playfair Display', serif;
+
+
+    color:var(--text);
+    background-color:var(--bg);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+header{
+    text-align:center;
+    padding:32px 16px;
+}
+
+header h1{margin:0 0 6px;font-size:1.8rem}
+header p{margin:0;color:var(--muted)}
+
+h2{ text-align:center; margin:20px 0 12px; color:var(--muted)}
+
+.workers{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap:18px;
+    max-width:1100px;
+    margin:0 auto;
+    padding:0 16px 28px;
+}
+
+.worker-card{
+    background:var(--card-bg);
+    border:1px solid var(--card-border);
+    padding:16px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow: 0 4px 10px rgba(11,11,11,0.04);
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.worker-card h3{margin:0;color:var(--text);font-size:1.05rem}
+.worker-card p{margin:0;color:var(--muted);font-size:0.95rem}
+
+.worker-card button{
+    margin-top:10px;
+    background:var(--accent);
+    color:#fff;
+    border:none;
+    padding:10px 12px;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:600;
+    transition:transform .12s ease, box-shadow .12s ease;
+}
+
+.worker-card button:hover{transform:translateY(-2px);box-shadow:0 6px 14px rgba(255,69,0,0.12)}
+.worker-card button:focus{outline:3px solid rgba(255,69,0,0.18)}
+
+.signup{
+    max-width:900px;
+    margin:28px auto 60px;
+    background:transparent;
+    padding:18px 16px;
+    border-top:2px solid rgba(0,0,0,0.06);
+}
+
+.signup h2{margin:0 0 8px}
+.signup p{margin:0 0 14px;color:var(--muted)}
+
+.signup form{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px 18px;
+    align-items:flex-start;
+    padding:6px 0;
+}
+
+.signup label{display:block;font-size:0.9rem;color:var(--muted)}
+.signup input[type="text"],
+.signup input[type="tel"]{
+    padding:10px 12px;
+    border-radius:6px;
+    border:1px solid rgba(0,0,0,0.12);
+    width:100%;
+}
+
+.signup .field{flex:1 1 260px; min-width:200px}
+
+.signup button[type="submit"]{
+    background:var(--accent);
+    color:#fff;
+    border:none;
+    padding:10px 18px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:700;
+}
+
+.signup button[type="submit"]:hover{opacity:0.95}
+
+/* Responsive tweaks */
+@media (max-width:640px){
+    header h1{font-size:1.4rem}
+    .workers{grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}
+    .signup form{flex-direction:column}
+    .signup .field{min-width:100%}
+}
+
+@media (min-width:1200px){
+    header h1{font-size:2.2rem}
+}
+
+
