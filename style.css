@@ -1,127 +1,142 @@
+/* Primary Colors: Beige, Black, Orange */
 
-:root{
-    --bg: #f5e6d8; /* beige */
-    --text: #0b0b0b; /* black */
-    --muted: #444;
-    --accent: orangered; /* orange-red */
-    --card-bg: #ffffff;
-    --card-border: rgba(0,0,0,0.08);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-*{box-sizing: border-box}
-
-body{
-    margin:0;
-    font-family: 'Playfair Display', serif;
-
-
-    color:var(--text);
-    background-color:var(--bg);
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
+body {
+    background-color: beige;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
-header{
-    text-align:center;
-    padding:32px 16px;
+/* Header styling */
+header {
+    background-color: black;
+    color: orange;
+    padding: 30px 20px;
+    text-align: center;
 }
 
-header h1{margin:0 0 6px;font-size:1.8rem}
-header p{margin:0;color:var(--muted)}
-
-h2{ text-align:center; margin:20px 0 12px; color:var(--muted)}
-
-.workers{
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap:18px;
-    max-width:1100px;
-    margin:0 auto;
-    padding:0 16px 28px;
+header h1 {
+    color: orange;
+    font-size: 32px;
+    margin-bottom: 10px;
 }
 
-.worker-card{
-    background:var(--card-bg);
-    border:1px solid var(--card-border);
-    padding:16px;
-    border-radius:10px;
-    text-align:center;
-    box-shadow: 0 4px 10px rgba(11,11,11,0.04);
-    display:flex;
-    flex-direction:column;
-    gap:8px;
+header p {
+    color: beige;
+    font-size: 18px;
 }
 
-.worker-card h3{margin:0;color:var(--text);font-size:1.05rem}
-.worker-card p{margin:0;color:var(--muted);font-size:0.95rem}
-
-.worker-card button{
-    margin-top:10px;
-    background:var(--accent);
-    color:#fff;
-    border:none;
-    padding:10px 12px;
-    border-radius:6px;
-    cursor:pointer;
-    font-weight:600;
-    transition:transform .12s ease, box-shadow .12s ease;
+/* Headings styling */
+h1, h2, h3, h4, h5, h6 {
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
-.worker-card button:hover{transform:translateY(-2px);box-shadow:0 6px 14px rgba(255,69,0,0.12)}
-.worker-card button:focus{outline:3px solid rgba(255,69,0,0.18)}
-
-.signup{
-    max-width:900px;
-    margin:28px auto 60px;
-    background:transparent;
-    padding:18px 16px;
-    border-top:2px solid rgba(0,0,0,0.06);
+h2 {
+    color: black;
+    border-bottom: 3px solid orange;
+    padding-bottom: 10px;
 }
 
-.signup h2{margin:0 0 8px}
-.signup p{margin:0 0 14px;color:var(--muted)}
-
-.signup form{
-    display:flex;
-    flex-wrap:wrap;
-    gap:12px 18px;
-    align-items:flex-start;
-    padding:6px 0;
+/* Section styling */
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-left: 4px solid orange;
 }
 
-.signup label{display:block;font-size:0.9rem;color:var(--muted)}
-.signup input[type="text"],
-.signup input[type="tel"]{
-    padding:10px 12px;
-    border-radius:6px;
-    border:1px solid rgba(0,0,0,0.12);
-    width:100%;
+/* Links styling */
+a {
+    color: orange;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
-.signup .field{flex:1 1 260px; min-width:200px}
-
-.signup button[type="submit"]{
-    background:var(--accent);
-    color:#fff;
-    border:none;
-    padding:10px 18px;
-    border-radius:8px;
-    cursor:pointer;
-    font-weight:700;
+a:hover {
+    color: #ff9500;
+    text-decoration: underline;
 }
 
-.signup button[type="submit"]:hover{opacity:0.95}
-
-/* Responsive tweaks */
-@media (max-width:640px){
-    header h1{font-size:1.4rem}
-    .workers{grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}
-    .signup form{flex-direction:column}
-    .signup .field{min-width:100%}
+/* Buttons styling */
+button {
+    background-color: orange;
+    color: black;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
 }
 
-@media (min-width:1200px){
-    header h1{font-size:2.2rem}
+button:hover {
+    background-color: #ff9500;
+    transform: scale(1.05);
 }
 
+button:active {
+    transform: scale(0.98);
+}
 
+/* Text styling */
+p, li {
+    color: black;
+    font-size: 16px;
+}
+
+/* Form styling */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 2px solid orange;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #ff9500;
+    box-shadow: 0 0 5px orange;
+}
+
+label {
+    color: black;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+/* List styling */
+ul {
+    margin-left: 20px;
+}
+
+li {
+    margin: 8px 0;
+}
+
+/* Footer styling */
+footer {
+    background-color: black;
+    color: orange;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-top: 3px solid orange;
+}
+
+footer p {
+    color: beige;
+    margin: 0;
+}
+    
