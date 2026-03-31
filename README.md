@@ -6,7 +6,7 @@
 ## Creators
 - Ian Kinoti  
 - Gladwell Birika  
-- Mirian Adasa  
+- Marian Adisa  
 - Felix Macharia  
 
 ## Purpose
