@@ -1,4 +1,4 @@
-/* Importing a clean, modern font */
+/* Importing modern font from google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600&display=swap');
 
 :root {
@@ -23,14 +23,14 @@ body {
     line-height: 1.6;
 }
 
-/* --- Typography --- */
+/*  Typography  */
 h1, h2, h3, h4 {
     font-family: 'Playfair Display', serif;
     color: var(--black);
     margin-bottom: 1rem;
 }
 
-/* --- Navigation --- */
+/* Navigation  */
 nav {
     display: flex;
     justify-content: space-between;
@@ -82,7 +82,7 @@ nav ul li a:hover {
     margin-left: 10px;
 }
 
-/* --- Hero Section --- */
+/*  Hero Section  */
 .hero {
     padding: 80px 5%;
     text-align: center;
@@ -120,7 +120,7 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
-/* --- Features & Grids --- */
+/*  Features & Grids  */
 .features, .categories {
     padding: 60px 5%;
     text-align: center;
@@ -141,7 +141,7 @@ article {
     box-shadow: var(--shadow);
 }
 
-/* --- Categories --- */
+/*  Categories  */
 .Category-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -164,7 +164,7 @@ article {
     color: white;
 }
 
-/* --- Call to Action --- */
+/* Call to Action  */
 .cta-section {
     background: var(--deep-orange);
     color: white;
@@ -190,7 +190,7 @@ article {
     color: white;
 }
 
-/* --- Footer --- */
+/*  Footer */
 footer {
     padding: 40px 5%;
     text-align: center;
@@ -261,7 +261,7 @@ h2 {
     color: white;
     cursor: pointer;
     font-weight: 600;
-    transition: background 0.3s;
+    transition: back-ground 0.3s;
 }
 
 .worker-card button:hover {
@@ -372,7 +372,7 @@ h2 {
     transition: all 0.3s ease;
 }
 
-/* Exotic focus glow */
+/* focus glow */
 .contact-form-section input:focus,
 .contact-form-section textarea:focus {
     border-color: var(--deep-orange);
