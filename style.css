@@ -261,7 +261,7 @@ h2 {
     color: white;
     cursor: pointer;
     font-weight: 600;
-    transition: back-ground 0.3s;
+    transition: background 0.3s;
 }
 
 .worker-card button:hover {
@@ -372,7 +372,7 @@ h2 {
     transition: all 0.3s ease;
 }
 
-/*  focus glow */
+/* Exotic focus glow */
 .contact-form-section input:focus,
 .contact-form-section textarea:focus {
     border-color: var(--deep-orange);
@@ -470,7 +470,6 @@ header p {
 
 
 /* RESPONSIVE */
-
 @media (max-width: 768px) {
     .contact-container {
         grid-template-columns: 1fr;
