@@ -3,6 +3,13 @@
 ## Overview
 **Jua Kali Konnect** is a web-based platform designed to connect individuals with skilled artisans who can help solve everyday problems. Whether it's plumbing, electrical work, carpentry, or other services, the platform makes it easy to find reliable professionals.
 
+## Live Demo
+A full walkthrough: client sign up & login, an artisan (fundi) signing up and setting up their professional profile, browsing and hiring a fundi, the M-Pesa escrow payment flow, and a simulated client satisfaction message.
+
+[![Click here to view live site](assets/demo-poster.png)](assets/demo.mp4)
+
+**[Click here to view live site](assets/demo.mp4)**
+
 ## Creators
 - Ian Kinoti  
 - Gladwell Birika  
@@ -38,3 +45,9 @@ Contributions are welcome to improve the platform. One key area for contribution
 
 ## License
 This project is open-source and available for modification and distribution.
+
+---
+
+<p align="center">
+  <img src="assets/ian-creative-emblem.jpeg" alt="IAN Creative" width="160">
+</p>
