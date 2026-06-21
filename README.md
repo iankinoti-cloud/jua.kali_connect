@@ -6,9 +6,9 @@
 ## Live Demo
 A full walkthrough: client sign up & login, an artisan (fundi) signing up and setting up their professional profile, browsing and hiring a fundi, the M-Pesa escrow payment flow, and a simulated client satisfaction message.
 
-[![Click here to view live site](assets/demo-poster.png)](assets/demo.mp4)
+[![Click here to view live site](assets/demo-poster.png)](https://iankinoti-cloud.github.io/jua.kali_connect/assets/demo.html)
 
-**[Click here to view live site](assets/demo.mp4)**
+**[Click here to view live site](https://iankinoti-cloud.github.io/jua.kali_connect/assets/demo.html)**
 
 ## Creators
 - Ian Kinoti  
